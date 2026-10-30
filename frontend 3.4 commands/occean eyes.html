@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Eyes | Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2 class="logo">🌊 Ocean Eyes</h2>
+        <p>Discover the world, one image at a time.</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Find Your <span>Inspiration.</span></h1>
+            <p>Explore beautiful images from around the world.</p>
+
+            <form id="searchForm" class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search oceans, sunsets, mountains..."
+                    aria-label="Search for images"
+                >
+                <button type="submit">Search ↗</button>
+            </form>
+
+            <div class="quick-picks">
+                <button type="button" class="chip" data-query="ocean">🌊 Ocean</button>
+                <button type="button" class="chip" data-query="sunset">🌅 Sunset</button>
+                <button type="button" class="chip" data-query="mountains">⛰️ Mountains</button>
+                <button type="button" class="chip" data-query="flowers">🌸 Flowers</button>
+                <button type="button" class="chip" data-query="cats">🐈 Cats</button>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="gallery-heading">
+                <h2>Explore the Gallery</h2>
+                <p id="resultCount">Your next favourite image awaits.</p>
+            </div>
+
+            <div id="results" class="image-grid">
+                <div class="welcome-card">
+                    <span>🌊</span>
+                    <h3>Your next adventure starts here.</h3>
+                    <p>Search for something you love to explore the gallery.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with 💙 and a little ocean magic.</p>
+        <p>Ocean Eyes © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
